@@ -8,7 +8,7 @@ exports.registerPage = (req, res) => {
 
 exports.registerUser = async (req, res) => {
     await User.create(req.body);
-    res.redirect('/products');
+    res.redirect('/');
 };
 
 
